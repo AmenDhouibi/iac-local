@@ -28,3 +28,6 @@ jobs:
 
       - name: Terraform Apply
         run: terraform apply -auto-approve
+      
+      - name: Vérifier que le site répond
+        run: curl http://localhost:8080
